@@ -1,0 +1,207 @@
+参考url: https://technicalseo.com/tools/schema-markup-generator/
+
+//店舗情報
+<script type="application/ld+json">
+    {
+     "@context":"http://schema.org",
+     "@type":"HardwareStore",
+     "name":"店舗名",
+     "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"番地",
+      "addressLocality":"市区町村",
+      "addressRegion":"都道府県",
+      "postalCode":"郵便番号",
+      "addressCountry":"JP"
+     },
+     "geo":{
+      "@type":"GeoCoordinates",
+      "latitude":"43.091152",
+      "longitude":"141.417409"
+     },
+     "telephone":"+81-11-374-1930",
+     "openingHoursSpecification":[
+      {
+       "@type":"OpeningHoursSpecification",
+       "dayOfWeek":[
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+       ],
+       "opens":"10:00",
+       "closes":"19:00"
+      },
+      {
+       "@type":"OpeningHoursSpecification",
+       "dayOfWeek":[
+        "Saturday",
+        "Sunday"
+       ],
+       "opens":"10:00",
+       "closes":"18:00"
+      }
+     ],
+     "image":"https://astro-p.co.jp/img/shop/higashikariki/higashikariki01.jpg",
+     "url":"https://www.astro-p.co.jp/shop/higashikariki"
+    }
+</script>
+
+// faq・よくある質問
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "description": "ディスクリプション",
+    "mainEntity":
+    [
+      {
+        "@type": "Question",
+        "name": "質問",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "回答",
+          "url": "URL"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "質問",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "回答",
+          "url": "URL"
+        }
+      }
+    ]
+  }
+</script>
+
+// 会社概要
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Corporation",
+  "name": "東北住電精密株式会社", 
+  "url": "http://www.tohoku-sumiden.co.jp/",
+  "logo": "http://www.tohoku-sumiden.co.jp/common/img/group-logo.png",
+  "image": "http://www.maremare-store.com/shop/item/mare/design/img01/logo2.png",
+  "address": {
+  "@type": "PostalAddress",
+  "postalCode": "541-0041",
+  "addressRegion": "福島県",
+  "addressLocality": "田村郡",
+  "streetAddress": "三春町深作10番地1",
+  "telephone": "+81-6-6220-4141"
+  }
+  }
+</script>
+
+// ローカルビジネス
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "株式会社まごころ畳 - 宇都宮営業所",
+  "url": "https://magokorotatami.co.jp/company.html",
+  "image": "https://magokorotatami.co.jp/1215.png",
+  "logo": "https://magokorotatami.co.jp/0101.png.pagespeed.ce.rSbWgIeCXJ.png",
+  "telephone": "028-688-0351",
+  "address": {
+    "@type": "PostalAddress",
+    "postalCode": "321-0924",
+    "addressRegion": "栃木県",
+    "addressLocality": "宇都宮市",
+    "streetAddress": "下栗１丁目4-4"
+  }
+}
+</script>
+
+// 商品情報
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "商品名",
+  "image": [
+    "画像URL.jpg"
+   ],
+  "sku": "商品番号：1192196",
+  "mpn": "製品の製造者部品番号：",
+  "description": "商品の説明文",
+  "brand": {
+    "@type": "Brand",
+    "name": "ブランド名：アディダス"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "評価点数：4.4",
+    "reviewCount": "レビュー数：86"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "URL:abc.jp",
+    "priceCurrency": "JPY",
+    "price": "値段（数字のみ）：1200",
+    "priceValidUntil": "2019-05-01",
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
+
+//サービス情報
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "池袋の発毛・AGA治療専門クリニック",
+    "brand": "池袋AGAクリニック",
+    "description": "池袋AGAクリニックは、AGA治療・発毛治療を提供するAGA治療専門クリニックです。単剤処方だけでは得られなかった発毛効果を独自のカクテル療法で得られます。池袋で脱毛症・薄毛についてお悩みの方は「池袋AGAクリニック」までご相談ください。",
+    "url": "https://ikebukuro-aga-clinic.jp/",
+    "logo": "https://ikebukuro-aga-clinic.jp/wp-content/themes/ikebukuro-aga-clinic/common/images/site-title.png"
+  }
+</script>
+
+//HowTo
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "image": {
+    "@type": "ImageObject",
+    "url": "画像名.jpg"
+  },
+  "name": "タイトル",
+  "description": "説明文",
+  "totalTime": "ステップを行う時間（ISO 8601形式）",
+  "supply": [
+    {
+      "@type": "HowToSupply",
+      "name": "使うもの（なければ削除）"
+    }
+  ],
+  "tool": [
+    {
+      "@type": "HowToTool",
+      "name": "使う道具やスキル（なければ削除）"
+    }
+  ],
+  "step":[
+    {
+      "@type": "HowToStep",
+      "name": "ステップタイトル",
+      "text": "説明文",
+      "image": "参考画像名.jpg",
+      "url": "ページURL.com"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "ステップタイトル",
+      "text": "説明文",
+      "image": "参考画像名.jpg",
+      "url": "ページURL.com"
+    }
+  ]
+}
+</script>
